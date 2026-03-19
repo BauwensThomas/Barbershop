@@ -124,8 +124,6 @@ public class AppointmentDAO {
                 // EN : Injection of the status retrieved from the database
                 // PT : Injeção do status recuperado do banco de dados
                 appt.setStatut(rs.getString("statut"));
-
-                // FR : Ajout du rendez-vous à la liste
                 list.add(appt);
             }
         }
@@ -231,10 +229,6 @@ public class AppointmentDAO {
                 list.add(appt);
             }
         }
-
-        // FR : Retour de la liste des rendez-vous du client
-        // EN : Return of the list of appointments for the requested client
-        // PT : Retorno da lista de compromissos para o cliente solicitado
         return list;
     }
 
@@ -334,10 +328,6 @@ public class AppointmentDAO {
                 return rs.getInt(1) > 0;
             }
         }
-
-        // Aucun conflit détecté
-        // EN : No conflict detected
-        // PT : Nenhum conflito detectado
         return false;
     }
 }

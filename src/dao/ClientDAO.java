@@ -108,10 +108,6 @@ public class ClientDAO {
                 ));
             }
         }
-
-        // FR : Retour de la liste complète
-        // EN : Return the complete list
-        // PT : Retorno da lista completa
         return clients;
     }
 
@@ -149,10 +145,6 @@ public class ClientDAO {
                 );
             }
         }
-
-        // FR : Aucun client trouvé avec cet id
-        // EN : No client found with this id
-        // PT : Nenhum cliente encontrado com este id
         return null;
     }
 
@@ -195,8 +187,6 @@ public class ClientDAO {
                 ));
             }
         }
-
-        // FR : Retour de la liste des clients correspondants
         return clients;
     }
 
